@@ -1,0 +1,22 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.navbar-custom{
+    background: #000;
+}
+
+.navbar-nav-custom{
+    margin-left: 50%;
+}
+
+.nav-link-custom{
+    color: #fff;
+    transition: 1s;
+}
+
+.nav-link-custom:hover{
+    color: orange;
+}
