@@ -10,6 +10,7 @@
 <img src="images/pizza-site.png" alt="Pizza Site" >
 
 ### Live Demo
+* https://alexotieno1717.github.io/pizza/
 
 ### Installation / Setup instruction
 * Open Terminal
