@@ -44,7 +44,7 @@
                 <form action="">
                     <div class="form-group">
                         <label for="flavour">Select Pizza Flavour</label>
-                        <select class="form-control" id="pizza" required>
+                        <select class="form-control" id="flavour" required>
                             <option value="">Select your flavour</option>
                             <option value="chickentikka">Chicken Tikka</option>
                             <option value="hawaiian">Hawaiian</option>
@@ -56,18 +56,18 @@
                         <label for="flavour">Select Size</label>
                         <select class="form-control" required>
                             <option value="">Select size here...</option>
-                            <option value="">Small  -- 750</option>
-                            <option value="">Medium -- 950</option>
-                            <option value="">Large -- 1200</option>
+                            <option value="small">Small </option>
+                            <option value="medium">Medium </option>
+                            <option value="large">Large </option>
                         </select>
                     </div>
                     <div class="form-group" id="crust">
                         <label for="flavour">Select Crust</label>
                         <select class="form-control" required>
                             <option value="">Choose your crust...</option>
-                            <option value="">Crispy -- 200</option>
-                            <option value="">Stuffed -- 250</option>
-                            <option value="">Gluten-free -- 150</option>
+                            <option value="crispy">Crispy @ Ksh. 100</option>
+                            <option value="stuffed">Stuffed @ Ksh. 150</option>
+                            <option value="gluten">Gluten-free @ sh. 180</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -103,6 +103,8 @@
                     <h2 class="text-center summary">Hello there, your order is as follows:</h2>
                     <ol id="list" class="text-center sum">
                     </ol>
+                    <button id="delivery">Delivery</button>
+                    <button id="pick">Pick Up</button>
                 </div>
             </div>
         </div>
