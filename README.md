@@ -13,7 +13,7 @@
 
 ### Installation / Setup instruction
 * Open Terminal
-* git clone 
+* git clone https://github.com/Alexotieno1717/pizza
 * cd pizza
 * Code . (Open in vs code)
 * Atom .
