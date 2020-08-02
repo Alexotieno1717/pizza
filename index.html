@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Custom css link -->
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-custom">
@@ -28,7 +29,7 @@
                 <a class="nav-link nav-link-custom" href="#">Menu</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="#">Order</a>
+                <a class="nav-link nav-link-custom" href="#order">Order</a>
             </li>
           </ul>
         </div>
@@ -37,84 +38,91 @@
 
     <div class="section" id="home">
         <div class="container-fluid" id="banner-img">
-
+            <div class="banner-content">
+                <h1>Pizza <span class="banner-title">Inn</span></h1>
+                <p>Get your pizza Instantly at affordable price.</p>
+                <a href="#menu" class="btn btn-outline-warning">Menu</a>
+            </div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="text-center pt-2">Order Pizza</h1>
-            </div>
-            <div class="col-md-6">
-                <form action="">
-                    <div class="form-group">
-                        <label for="flavour">Select Pizza Flavour</label>
-                        <select class="form-control" id="flavour" required>
-                            <option value="">Select your flavour</option>
-                            <option value="chickentikka">Chicken Tikka</option>
-                            <option value="hawaiian">Hawaiian</option>
-                            <option value="mushroom">Chicken and Mushroom</option>
-                            <option value="regina">Regina Pizza</option>
-                        </select>
+    <section id="order">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center pt-2">Order Pizza</h1>
+                </div>
+                <div class="col-md-6">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="flavour">Select Pizza Flavour</label>
+                            <select class="form-control" id="flavour" required>
+                                <option value="">Select your flavour</option>
+                                <option value="chickentikka">Chicken Tikka</option>
+                                <option value="hawaiian">Hawaiian</option>
+                                <option value="mushroom">Chicken and Mushroom</option>
+                                <option value="regina">Regina Pizza</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="size">
+                            <label for="flavour">Select Size</label>
+                            <select class="form-control" required>
+                                <option value="">Select size here...</option>
+                                <option value="small">Small </option>
+                                <option value="medium">Medium </option>
+                                <option value="large">Large </option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="crust">
+                            <label for="flavour">Select Crust</label>
+                            <select class="form-control" required>
+                                <option value="">Choose your crust...</option>
+                                <option value="crispy">Crispy @ Ksh. 100</option>
+                                <option value="stuffed">Stuffed @ Ksh. 150</option>
+                                <option value="gluten">Gluten-free @ sh. 180</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="flavour">Select Topping</label>
+                            <select class="form-control" id="topping" required>
+                                <option value="">Choose your Topping...</option>
+                                <option value="tomato">Tomato @ sh. 80</option>
+                                <option value="onions">Onions @ sh. 80</option>
+                                <option value="mushroom">Mushroom @ sh. 80</option>
+                                <option value="greenpepper">Green Pepper @ sh. 80</option>
+                                <option value=""></option>
+                                <option value="olives">Olives @ sh. 120</option>
+                                <option value="pineapple">Pineapple @ sh. 120</option>
+                                <option value="sweetcorn">Sweet Corn @ sh. 120</option>
+                                <option value="macon">Macon @ sh. 120</option>
+                                <option value="mince">Mince @ sh. 120</option>
+                                <option value=""></option>
+                                <option value="beef">Beef Peperoni @ sh. 170</option>
+                                <option value="chicken">Periperi Chicken @ sh. 170</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Number of Pizza's</label>
+                            <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
+                        </div>
+                        <button type="submit" id="checkout" class="btn btn-info">Check Out</button>
+                    </form>
+                </div>
+                <!-- End of place order -->
+                <div class="col-md-6">
+                    <div class="order-summary" id="sum-order">
+                        <h1 class="text-center" id="summary">Order Summary</h1>
+                        <h2 class="text-center summary">Hello there, your order is as follows:</h2>
+                        <ol id="list" class="text-center sum">
+                        </ol>
+                        <button id="delivery">Delivery</button>
+                        <button id="pick">Pick Up</button>
                     </div>
-                    <div class="form-group" id="size">
-                        <label for="flavour">Select Size</label>
-                        <select class="form-control" required>
-                            <option value="">Select size here...</option>
-                            <option value="small">Small </option>
-                            <option value="medium">Medium </option>
-                            <option value="large">Large </option>
-                        </select>
-                    </div>
-                    <div class="form-group" id="crust">
-                        <label for="flavour">Select Crust</label>
-                        <select class="form-control" required>
-                            <option value="">Choose your crust...</option>
-                            <option value="crispy">Crispy @ Ksh. 100</option>
-                            <option value="stuffed">Stuffed @ Ksh. 150</option>
-                            <option value="gluten">Gluten-free @ sh. 180</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="flavour">Select Topping</label>
-                        <select class="form-control" id="topping" required>
-                            <option value="">Choose your Topping...</option>
-                            <option value="tomato">Tomato @ sh. 80</option>
-                            <option value="onions">Onions @ sh. 80</option>
-                            <option value="mushroom">Mushroom @ sh. 80</option>
-                            <option value="greenpepper">Green Pepper @ sh. 80</option>
-                            <option value=""></option>
-                            <option value="olives">Olives @ sh. 120</option>
-                            <option value="pineapple">Pineapple @ sh. 120</option>
-                            <option value="sweetcorn">Sweet Corn @ sh. 120</option>
-                            <option value="macon">Macon @ sh. 120</option>
-                            <option value="mince">Mince @ sh. 120</option>
-                            <option value=""></option>
-                            <option value="beef">Beef Peperoni @ sh. 170</option>
-                            <option value="chicken">Periperi Chicken @ sh. 170</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="">Number of Pizza's</label>
-                        <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
-                    </div>
-                    <button type="submit" id="checkout" class="btn btn-info">Check Out</button>
-                </form>
-            </div>
-            <!-- End of place order -->
-            <div class="col-md-6">
-                <div class="order-summary" id="sum-order">
-                    <h1 class="text-center" id="summary">Order Summary</h1>
-                    <h2 class="text-center summary">Hello there, your order is as follows:</h2>
-                    <ol id="list" class="text-center sum">
-                    </ol>
-                    <button id="delivery">Delivery</button>
-                    <button id="pick">Pick Up</button>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <!-- End Order -->
 
 
      
