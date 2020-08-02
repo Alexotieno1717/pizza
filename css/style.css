@@ -1,6 +1,9 @@
 /* ===============================
 GENERAL 
 ================================================ */
+* {
+    scroll-behavior: smooth;
+}
 body{
     padding: 0;
     margin: 0;
@@ -26,4 +29,26 @@ NAVIGATION SECTION
 
 .nav-link-custom:hover{
     color: orange;
+}
+
+.navbar-toggler{
+    background: orange;
+}
+
+.navbar-brand{
+    color: #fff;
+}
+
+.navbar-brand-custom{
+    color: orange;
+    font-style: italic;
+}
+
+/* ===============================
+BANNER SECTION
+================================================ */
+#banner-img{
+    background: linear-gradient(rgba(0 ,0, 0, .7), rgba(0 ,0, 0, .9)), url(../images/XBEKUJK.jpg) no-repeat 50% 50%;
+    background-position: right center;
+    height: 100vh;
 }
