@@ -37,6 +37,7 @@ NAVIGATION SECTION
 
 .navbar-brand{
     color: #fff;
+    font-family: 'Lemon', cursive;
 }
 
 .navbar-brand-custom{
@@ -81,10 +82,10 @@ BANNER SECTION
         transform: translateY(0);
     }
     40%{
-        transform: translateY(-55px);
+        transform: translateY(-45px);
     }
     70%{
-        transform: translateY(-45px);
+        transform: translateY(-35px);
     }
     
 }
