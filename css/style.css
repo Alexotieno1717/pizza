@@ -50,7 +50,7 @@ BANNER SECTION
 #banner-img{
     background: linear-gradient(rgba(0 ,0, 0, .7), rgba(0 ,0, 0, .8)), url(../images/XBEKUJK.jpg) no-repeat 50% 50%;
     background-position: right center;
-    height: 100vh;
+    height: 90vh;
 }
 
 .banner-content{
@@ -67,4 +67,9 @@ BANNER SECTION
 .banner-title{
     font-style: italic;
     color: orange;
+}
+
+#arrow-down{
+    padding-top: 7%;
+    padding-left: 49%;
 }
