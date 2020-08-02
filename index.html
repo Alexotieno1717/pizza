@@ -13,7 +13,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-custom">
-        <a class="navbar-brand" href="#">Pizza <span class="navbar-brand-custom">Inn</span></a>
+        <a class="navbar-brand" href="#home">Pizza <span class="navbar-brand-custom">Inn</span></a>
         <!-- Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -21,13 +21,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav navbar-nav-custom">
             <li class="nav-item active">
-              <a class="nav-link nav-link-custom" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link nav-link-custom" href="#home">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-custom" href="#">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="#">Menu</a>
+                <a class="nav-link nav-link-custom" href="#menu">Menu</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link nav-link-custom" href="#order">Order</a>
@@ -47,14 +47,65 @@
             <a href="#order"><i id="arrow-down" class="fa fa-2x fa-angle-double-down text-warning"></i></a>
         </div>
     </div>
+    <!-- End Section banner -->
+
+    <section id="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center pt-3">
+                    <h2>Menu</h2>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <p>Chocolate Pizza</p>
+                        </div>
+                        <div class="card-body">
+                            <img class="w-100 img-fluid" src="images/1.jpg" alt="">
+                        </div>
+                        <div class="card-footer">
+                            <a href="#order" class="btn btn-warning">Order</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <p>York-style Pizza</p>
+                        </div>
+                        <div class="card-body">
+                            <img class="w-100 img-fluid" src="images/5.jpg" alt="">
+                        </div>
+                        <div class="card-footer">
+                            <a href="#order" class="btn btn-warning">Order</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <p>Greek Pizza</p>
+                        </div>
+                        <div class="card-body">
+                            <img class="w-100 img-fluid" src="images/4.jpg" alt="">
+                        </div>
+                        <div class="card-footer">
+                            <a href="#order" class="btn btn-warning">Order</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of menu -->
 
     <section id="order">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="text-center pt-2">Order Pizza</h1>
+                    <h1 class="text-center text-warning pt-2 order-pizza">Order Pizza</h1>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 text-light">
                     <form action="">
                         <div class="form-group">
                             <label for="flavour">Select Pizza Flavour</label>
@@ -107,18 +158,31 @@
                             <label for="">Number of Pizza's</label>
                             <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
                         </div>
-                        <button type="submit" id="checkout" class="btn btn-info">Check Out</button>
+                        <button type="submit" id="checkout" class="btn btn-warning">Check Out</button>
                     </form>
                 </div>
                 <!-- End of place order -->
-                <div class="col-md-6">
-                    <div class="order-summary" id="sum-order">
-                        <h1 class="text-center" id="summary">Order Summary</h1>
-                        <h2 class="text-center summary">Hello there, your order is as follows:</h2>
+                <div class="col-md-6 text-white">
+                    <div class="order-summary pt-3" id="sum-order">
+                        <h2 class="text-center" id="summary">Order Summary</h2>
+                        <h5 class="text-center summary">Hello there, your order is as follows:</h5>
                         <ol id="list" class="text-center sum">
                         </ol>
-                        <button id="delivery">Delivery</button>
-                        <button id="pick">Pick Up</button>
+                        <div class="order-button text-center">
+                            <form action="" class="form-group data" id="data">
+                                <div class="form-group">
+                                    <input type="text" class="form-control cdata" id="name" placeholder="Enter your Name:">
+                                </div>
+                               <div class="form-group">
+                                <input type="text" class="form-control cdata" id="phone" placeholder="Enter your phone number: ">
+                               </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control cdata" id="location" placeholder="Enter the location: ">
+                                </div>
+                            </form>
+                            <button class="btn btn-warning" id="delivery">Delivery</button>
+                            <button class="btn btn-warning" id="pick">Pick Up</button>
+                        </div>
                     </div>
                 </div>
             </div>

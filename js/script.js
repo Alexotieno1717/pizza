@@ -1,6 +1,4 @@
 $(document).ready(function(){
-    $('#delivery').hide();
-    $('#pick').hide();
     $("#checkout").click(function(){
         //Get Input data
         let flavour = $("#flavour option:selected").val();
@@ -227,9 +225,24 @@ $(document).ready(function(){
             + newOrder.t + "<br>" + " Number of pizza :    "
             + newOrder.n + "<br>" + "Total Price :  "
             + newOrder.total + "<br><br>").css('font-size', '20px');
-            $("#delivery").show();
-            $('#pick').show();
 
     });
      
-})
+});
+
+$(function(){
+    $("#delivery").click(function(){
+        // $("#data").show();
+
+        let inputedName = $("#name").val();
+        let inputedPhone = $("#phone").val();
+        let inputedLocation = $("#location").val();
+        alert(inputedName + " " + "We have recieved your order and the delivery wil be made at " + inputedLocation)
+    });
+
+    $("#pick").click(function(){
+        alert("Thank you for choosing Us")
+    })
+    
+
+});
